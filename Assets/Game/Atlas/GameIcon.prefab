@@ -211,7 +211,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: left
-    x: 163
+    x: 164
     y: 148
     width: 64
     height: 64
@@ -238,7 +238,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: right
     x: 0
-    y: 57
+    y: 55
     width: 64
     height: 64
     borderLeft: 0

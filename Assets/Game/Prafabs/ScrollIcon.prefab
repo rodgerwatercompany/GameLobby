@@ -9,7 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 419824}
   - 114: {fileID: 11419824}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25,7 +25,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 495456}
   - 114: {fileID: 11495448}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: Label_limit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,8 +42,7 @@ GameObject:
   - 4: {fileID: 495458}
   - 65: {fileID: 6595468}
   - 114: {fileID: 11495450}
-  - 114: {fileID: 11495452}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: Button_Download
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60,10 +59,10 @@ GameObject:
   - 4: {fileID: 495460}
   - 65: {fileID: 6595470}
   - 114: {fileID: 11495458}
-  - 114: {fileID: 11495460}
   - 114: {fileID: 11495454}
   - 114: {fileID: 11495456}
-  m_Layer: 8
+  - 114: {fileID: 11490848}
+  m_Layer: 5
   m_Name: Button_Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79,7 +78,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 495462}
   - 114: {fileID: 11495462}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +94,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 495464}
   - 114: {fileID: 11495464}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: ScrollIcon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -121,7 +120,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 195456}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 30, z: 0}
+  m_LocalPosition: {x: 0, y: 100, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 495460}
@@ -133,7 +132,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 195458}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -46.2700005, z: 0}
+  m_LocalPosition: {x: 0, y: -150, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 419824}
@@ -161,7 +160,7 @@ Transform:
   m_GameObject: {fileID: 195462}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: .699999988, y: .699999988, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 495460}
   m_RootOrder: 0
@@ -173,7 +172,7 @@ Transform:
   m_GameObject: {fileID: 195464}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: .699999988, y: .699999988, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 495460}
   - {fileID: 495458}
@@ -189,7 +188,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 64.0000076, y: 64.0000076, z: 0}
+  m_Size: {x: 130, y: 130, z: 0}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &6595470
 BoxCollider:
@@ -201,7 +200,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 162.000015, y: 156.000015, z: 0}
+  m_Size: {x: 280, y: 280, z: 0}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &11419824
 MonoBehaviour:
@@ -233,8 +232,8 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 64
-  mHeight: 64
+  mWidth: 130
+  mHeight: 130
   mDepth: 2
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
@@ -253,6 +252,20 @@ MonoBehaviour:
   mAtlas: {fileID: 11499040, guid: a9370f7092fa150489278576a5b12dc5, type: 2}
   mSpriteName: download
   mFillCenter: 1
+--- !u!114 &11490848
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 195460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2b18b251ec30b3459c87a16dabcc701, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollicon: {fileID: 11495464}
+  uiplaytween: {fileID: 11495454}
+  uibutton: {fileID: 11495458}
 --- !u!114 &11495448
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -283,8 +296,8 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: .623529434, g: .792156875, b: 1, a: 1}
   mPivot: 4
-  mWidth: 150
-  mHeight: 30
+  mWidth: 300
+  mHeight: 60
   mDepth: 2
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
@@ -294,7 +307,7 @@ MonoBehaviour:
   mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   mFont: {fileID: 0}
   mText: Need Level
-  mFontSize: 30
+  mFontSize: 60
   mFontStyle: 3
   mAlignment: 0
   mEncoding: 1
@@ -347,21 +360,6 @@ MonoBehaviour:
     mMethodName: OnClick_DownLoad
     mParameters: []
     oneShot: 0
---- !u!114 &11495452
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 195458}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d44bc69c2ca5f943b845318866dc1bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioClip: {fileID: 0}
-  trigger: 0
-  volume: 1
-  pitch: 1
 --- !u!114 &11495454
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -448,26 +446,7 @@ MonoBehaviour:
   pressedSprite2D: {fileID: 0}
   disabledSprite2D: {fileID: 0}
   pixelSnap: 0
-  onClick:
-  - mTarget: {fileID: 11495464}
-    mMethodName: OnClick_StartGame
-    mParameters: []
-    oneShot: 0
---- !u!114 &11495460
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 195460}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d44bc69c2ca5f943b845318866dc1bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioClip: {fileID: 0}
-  trigger: 0
-  volume: 1
-  pitch: 1
+  onClick: []
 --- !u!114 &11495462
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -498,13 +477,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 162
-  mHeight: 156
+  mWidth: 280
+  mHeight: 280
   mDepth: 1
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 1.03846157
+  aspectRatio: 1
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -529,6 +508,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff556baf45bc1474db0c90bf4da8cb49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  simplebutton: {fileID: 11490848}
   Ref_progressball: {fileID: 130038, guid: 9d6af902bfb981542966bb45c0beb284, type: 2}
   uibutton_icon: {fileID: 11495458}
   uibutton_download: {fileID: 11495450}
